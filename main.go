@@ -8,9 +8,9 @@ import (
 )
 
 func main() {
-	router := gin.Default()
+	engine := gin.Default()
 	config.Connect()
-	routes.UserRoute(router)
+	routes.UserRoute(engine)
 
-	router.Run(":8080")
+	engine.Run(":8080")
 }
